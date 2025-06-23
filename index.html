@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandHub62.id - Jasa Video Iklan CGI, 3D & AI Profesional</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0B1120; /* Dark blue background */
+            color: #E0E0E0; /* Light gray text */
+        }
+        .hero-gradient {
+            background: radial-gradient(ellipse at top, rgba(29, 78, 216, 0.15), transparent 60%);
+        }
+        .section-gradient {
+            background: radial-gradient(ellipse at center, rgba(29, 78, 216, 0.08), transparent 70%);
+        }
+        .btn-primary {
+            @apply bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-blue-600/20;
+        }
+        .btn-secondary {
+            @apply bg-transparent border-2 border-blue-500 text-blue-400 font-semibold py-3 px-8 rounded-lg hover:bg-blue-500 hover:text-white transition-all duration-300;
+        }
+        .card {
+            @apply bg-slate-800/40 border border-slate-700 rounded-xl shadow-lg backdrop-blur-sm;
+        }
+        .active-nav {
+            @apply text-blue-400 font-semibold;
+        }
+        .inactive-nav {
+             @apply text-gray-300 hover:text-blue-400 transition-colors duration-300;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-slate-900/50 backdrop-blur-lg border-b border-slate-800 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                BrandHub<span class="text-blue-500">62</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#layanan" class="inactive-nav">Layanan</a>
+                <a href="#portofolio" class="inactive-nav">Portofolio</a>
+                <a href="#harga" class="inactive-nav">Paket Harga</a>
+                <a href="#proses" class="inactive-nav">Proses</a>
+                <a href="#faq" class="inactive-nav">FAQ</a>
+            </nav>
+            <a href="#kontak" class="hidden md:inline-block btn-primary px-6 py-2">Hubungi Kami</a>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#layanan" class="block py-2 text-gray-300 hover:text-blue-400">Layanan</a>
+            <a href="#portofolio" class="block py-2 text-gray-300 hover:text-blue-400">Portofolio</a>
+            <a href="#harga" class="block py-2 text-gray-300 hover:text-blue-400">Paket Harga</a>
+            <a href="#proses" class="block py-2 text-gray-300 hover:text-blue-400">Proses</a>
+            <a href="#faq" class="block py-2 text-gray-300 hover:text-blue-400">FAQ</a>
+            <a href="#kontak" class="block mt-4 text-center btn-primary w-full">Hubungi Kami</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="pt-32 pb-20 text-center hero-gradient">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6 animate-fade-in-down">
+                    Transformasi Iklan Anda dengan 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">CGI, 3D & AI</span>
+                </h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 mb-10">
+                    Membantu Brand & UMKM bertumbuh lewat video iklan yang memukau dan berteknologi tinggi. Tingkatkan daya tarik produk Anda di level berikutnya.
+                </p>
+                <div class="flex justify-center items-center space-x-4">
+                    <a href="#kontak" class="btn-primary">Konsultasi Gratis</a>
+                    <a href="#portofolio" class="btn-secondary">Lihat Karya Kami</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layanan Section -->
+        <section id="layanan" class="py-20 section-gradient">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Layanan Unggulan Kami</h2>
+                    <p class="text-gray-400 mt-2">Solusi lengkap untuk kebutuhan visual marketing Anda.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="card p-8 text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block p-4 bg-blue-900/50 rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22h.01"/><path d="M8.5 2h7l5 5v11a2 2 0 0 1-2 2h-1.1"/><path d="m18 18-6-6-6 6"/><path d="m12 12-6 6"/><path d="M22 12a10.04 10.04 0 0 0-10-10C7.2 2 2.7 5.9 2.2 11.2"/><path d="m7 18 5-5 .5.5"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white mb-2">Video Iklan CGI</h3>
+                        <p class="text-gray-400">Menciptakan visual yang mustahil menjadi nyata. Sempurna untuk produk yang membutuhkan demonstrasi kompleks atau efek sinematik.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="card p-8 text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block p-4 bg-blue-900/50 rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.12 6.54l-1.39-1.39a2 2 0 0 0-2.82 0L4 18l-3 3 3-3 12.9-12.9a2 2 0 0 0 0-2.82z"/><path d="M11 5L6 10"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white mb-2">Animasi Produk 3D</h3>
+                        <p class="text-gray-400">Tampilkan produk Anda dari setiap sudut dengan detail yang tajam. Ideal untuk e-commerce, peluncuran produk, dan materi teknis.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="card p-8 text-center transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="inline-block p-4 bg-blue-900/50 rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="12" width="8" height="8" rx="2"/><path d="M8 12v-2a2 2 0 1 1 4 0v2"/><path d="M12 12h4"/><path d="M16 12h4"/><path d="M16 12v-2a2 2 0 1 0-4 0v2"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white mb-2">Video Berbasis AI</h3>
+                        <p class="text-gray-400">Produksi video lebih cepat dan efisien dengan bantuan teknologi AI, menghasilkan konten menarik untuk media sosial dan kampanye digital.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portofolio Section -->
+        <section id="portofolio" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Portofolio Pilihan Kami</h2>
+                    <p class="text-gray-400 mt-2">Beberapa karya yang telah kami hasilkan untuk klien.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Item 1 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/0B1120/FFF?text=Iklan+Minuman+Segar" alt="[Gambar iklan minuman]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div>
+                                <h3 class="text-white text-xl font-bold">Iklan Minuman</h3>
+                                <p class="text-gray-300">Animasi 3D & CGI Splash Effect</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/0B1120/FFF?text=Display+Produk+Kosmetik" alt="[Gambar produk kosmetik]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div>
+                                <h3 class="text-white text-xl font-bold">Produk Kosmetik</h3>
+                                <p class="text-gray-300">Visualisasi Produk 3D Realistis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/0B1120/FFF?text=Animasi+Gadget+Tech" alt="[Gambar animasi gadget]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/50 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div>
+                                <h3 class="text-white text-xl font-bold">Gadget & Teknologi</h3>
+                                <p class="text-gray-300">Motion Graphics & Explainer Video</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more portfolio items as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Paket Harga Section -->
+        <section id="harga" class="py-20 section-gradient">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Informasi Pemesanan & Pembayaran</h2>
+                    <p class="text-gray-400 mt-2">Pilih paket yang paling sesuai dengan kebutuhan bisnis Anda.</p>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Pricing Card 1 -->
+                    <div class="card p-8 flex flex-col">
+                        <h3 class="text-2xl font-semibold text-blue-400">UMKM Starter</h3>
+                        <p class="text-gray-400 mt-2 mb-6">Cocok untuk memulai di media sosial.</p>
+                        <p class="text-4xl font-bold text-white mb-6">Rp 1.5jt<span class="text-lg font-normal text-gray-400">/video</span></p>
+                        <ul class="space-y-4 text-gray-300 mb-8 flex-grow">
+                            <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Durasi hingga 15 detik</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Animasi 3D Sederhana</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>1x Revisi Minor</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Resolusi Full HD</li>
+                        </ul>
+                        <a href="#kontak" class="w-full text-center btn-secondary">Pilih Paket</a>
+                    </div>
+                    <!-- Pricing Card 2 (Popular) -->
+                    <div class="card p-8 flex flex-col border-2 border-blue-500 relative transform lg:scale-105">
+                        <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full">PALING POPULER</span>
+                        <h3 class="text-2xl font-semibold text-blue-300">Brand Growth</h3>
+                        <p class="text-gray-400 mt-2 mb-6">Untuk brand yang ingin tampil menonjol.</p>
+                        <p class="text-4xl font-bold text-white mb-6">Rp 4jt<span class="text-lg font-normal text-gray-400">/video</span></p>
+                        <ul class="space-y-4 text-gray-300 mb-8 flex-grow">
+                             <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Durasi hingga 30 detik</li>
+                             <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Animasi 3D & Efek CGI</li>
+                             <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>2x Revisi Mayor</li>
+                             <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Resolusi 4K</li>
+                             <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Konsep & Storyboard</li>
+                        </ul>
+                         <a href="#kontak" class="w-full text-center btn-primary">Pilih Paket</a>
+                    </div>
+                    <!-- Pricing Card 3 -->
+                    <div class="card p-8 flex flex-col">
+                        <h3 class="text-2xl font-semibold text-blue-400">Enterprise Pro</h3>
+                        <p class="text-gray-400 mt-2 mb-6">Solusi komprehensif untuk kampanye besar.</p>
+                        <p class="text-4xl font-bold text-white mb-6">Custom</p>
+                        <ul class="space-y-4 text-gray-300 mb-8 flex-grow">
+                             <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Durasi & Konten Fleksibel</li>
+                             <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Efek CGI & Simulasi Kompleks</li>
+                             <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Revisi Tanpa Batas</li>
+                             <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Tim Produksi Khusus</li>
+                             <li class="flex items-center"><span class="text-blue-500 mr-3">✔</span>Hak Komersial Penuh</li>
+                        </ul>
+                        <a href="#kontak" class="w-full text-center btn-secondary">Hubungi Sales</a>
+                    </div>
+                </div>
+                 <p class="text-center text-gray-400 mt-10">Pembayaran dapat dilakukan melalui Transfer Bank (BCA, Mandiri) atau E-Wallet (GoPay, OVO). DP 50% di awal pengerjaan.</p>
+            </div>
+        </section>
+
+        <!-- Proses Kerja Section -->
+        <section id="proses" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Proses Kerja Kami</h2>
+                    <p class="text-gray-400 mt-2">Empat langkah mudah untuk mewujudkan ide Anda.</p>
+                </div>
+                <div class="relative">
+                    <!-- Dotted line for desktop -->
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-px bg-slate-700 -translate-y-1/2"></div>
+                    <div class="grid md:grid-cols-4 gap-8 text-center relative">
+                        <!-- Step 1 -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 rounded-full bg-slate-800 border-2 border-blue-500 flex items-center justify-center text-blue-400 text-2xl font-bold mb-4 z-10">1</div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Konsultasi & Konsep</h3>
+                            <p class="text-gray-400">Kita diskusikan ide, target audiens, dan tujuan kampanye Anda untuk membuat konsep yang solid.</p>
+                        </div>
+                        <!-- Step 2 -->
+                         <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 rounded-full bg-slate-800 border-2 border-blue-500 flex items-center justify-center text-blue-400 text-2xl font-bold mb-4 z-10">2</div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Produksi & Kreasi</h3>
+                            <p class="text-gray-400">Tim kami mulai proses modeling 3D, animasi, dan CGI sesuai storyboard yang disetujui.</p>
+                        </div>
+                        <!-- Step 3 -->
+                         <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 rounded-full bg-slate-800 border-2 border-blue-500 flex items-center justify-center text-blue-400 text-2xl font-bold mb-4 z-10">3</div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Revisi & Feedback</h3>
+                            <p class="text-gray-400">Kami kirimkan draft awal untuk Anda review. Sesi revisi dilakukan sesuai paket yang dipilih.</p>
+                        </div>
+                        <!-- Step 4 -->
+                         <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 rounded-full bg-slate-800 border-2 border-blue-500 flex items-center justify-center text-blue-400 text-2xl font-bold mb-4 z-10">4</div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Finalisasi & Pengiriman</h3>
+                            <p class="text-gray-400">Setelah final, kami kirimkan file video resolusi tinggi siap untuk dipublikasikan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 section-gradient">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Pertanyaan Umum (FAQ)</h2>
+                    <p class="text-gray-400 mt-2">Jawaban untuk beberapa pertanyaan yang sering diajukan.</p>
+                </div>
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="card p-2">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4">
+                            <span class="text-lg font-semibold text-white">Berapa lama pengerjaan satu video?</span>
+                            <svg class="w-6 h-6 text-blue-400 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div class="faq-answer hidden p-4 pt-0 text-gray-300">
+                            Waktu pengerjaan bervariasi tergantung kompleksitas. Rata-rata untuk paket UMKM Starter sekitar 5-7 hari kerja, dan paket Brand Growth sekitar 10-14 hari kerja setelah konsep disetujui.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                     <div class="card p-2">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4">
+                            <span class="text-lg font-semibold text-white">Apakah saya perlu menyediakan model 3D produk saya?</span>
+                            <svg class="w-6 h-6 text-blue-400 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div class="faq-answer hidden p-4 pt-0 text-gray-300">
+                           Tidak perlu. Layanan kami sudah termasuk pembuatan aset 3D dari produk Anda. Anda hanya perlu mengirimkan foto produk dari berbagai sisi sebagai referensi.
+                        </div>
+                    </div>
+                     <!-- FAQ Item 3 -->
+                     <div class="card p-2">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4">
+                            <span class="text-lg font-semibold text-white">Bagaimana jika saya ingin revisi lebih dari jatah paket?</span>
+                            <svg class="w-6 h-6 text-blue-400 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div class="faq-answer hidden p-4 pt-0 text-gray-300">
+                           Kami menyediakan opsi untuk penambahan slot revisi dengan biaya tambahan yang akan diinformasikan sebelumnya. Kami fleksibel untuk memastikan Anda puas dengan hasil akhirnya.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontak" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold text-white">Siap Mengubah Brand Anda?</h2>
+                 <p class="max-w-2xl mx-auto text-gray-300 my-6">
+                    Hubungi kami sekarang untuk konsultasi gratis. Mari diskusikan bagaimana kami dapat membantu brand Anda bertumbuh dengan video iklan yang powerful.
+                </p>
+                <a href="https://wa.me/6281234567890?text=Halo%20BrandHub62,%20saya%20tertarik%20dengan%20jasa%20video%20iklan%20Anda." target="_blank" class="btn-primary inline-flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.267.651 4.383 1.826 6.062l-1.073 3.912 3.919-1.065z"/></svg>
+                    <span>Hubungi via WhatsApp</span>
+                </a>
+                <p class="text-gray-400 mt-6">Atau temukan kami di:</p>
+                <p class="text-white font-semibold mt-1">Klari, Karawang, 41371</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; <span id="year"></span> BrandHub62.id. Semua Hak Cipta Dilindungi.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://instagram.com/brandhub62.id" target="_blank" class="hover:text-white transition-colors"><span class="sr-only">Instagram</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                 <!-- Tambahkan link sosial media lain jika ada -->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('svg');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+
+                // Close other FAQs
+                faqQuestions.forEach(otherQuestion => {
+                    if(otherQuestion !== question) {
+                        otherQuestion.nextElementSibling.classList.add('hidden');
+                        otherQuestion.querySelector('svg').classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Active Nav Link on Scroll (Optional but nice)
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('header nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active-nav');
+                link.classList.add('inactive-nav');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active-nav');
+                    link.classList.remove('inactive-nav');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
